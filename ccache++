@@ -1,0 +1,2 @@
+#!/bin/bash
+ccache clang++-3.7 $@
