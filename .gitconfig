@@ -1,0 +1,63 @@
+[core]
+    editor = vim
+    pager = less -R
+[user]
+	name = Piotr Padlewski
+	email = piotr.padlewski@gmail.com
+[color]
+    diff   = auto
+    status = auto
+    branch = auto
+    ui     = true
+        pager  = true
+    interactive = auto
+
+[color "branch"]
+        current = green bold
+        local   = green dim
+        remote  = yellow dim
+
+[color "diff"]
+        commit = blue reverse
+        meta   = yellow reverse
+        frag   = yellow bold
+        old    = red
+        new    = green
+        plain  = white dim
+
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    w  = whatchanged
+    lg = log --graph --all --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%Creset %s%C(yellow)%d%Creset' --abbrev-commit --date=relative
+
+    kurwa = log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %Cgreen(%cr)%Creset%n%w(80,8,8)%s' --graph
+    duzedrzewokurwa = log --pretty=format:'%Cred%h%Creset %C(bold blue)<%an>%Creset%C(yellow)%d%Creset %Cgreen(%cr)%Creset%n%w(80,8,8)%s%n' --graph --name-status
+    komitykurwa = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
+
+    ktotokurwa = "!sh -c 'git log -i -1 --pretty=\"format::%an <%ae>\n\" --author=\"$1\"' -"
+    cotokurwa = show -s --pretty='tformat::%h (%s, %ad)' --date=short
+
+    cotamkurwa = !sh -c 'git fetch' && git log --oneline HEAD..origin/$1
+    cotammistrzukurwa = !sh -c 'git fetch' && git log --oneline HEAD..origin/master
+    ktotamkurwa = !sh -c 'git shortlog HEAD..origin/$0'
+    ktotammistrzukurwa = !sh -c 'git shortlog HEAD..origin/master'
+
+    tagikurwa = show-ref --tags
+    pchajtagikurwa = push --tags
+    tagujzdatakurwa = !sh -c 'git tag "$0"_$(date "+%y-%m-%d_%H-%M-%S")'
+
+    pojebalosiekurwa = reset --hard
+
+    ktonajebalkurwa = blame
+
+    #kurwa = status
+    cokurwa = status
+    cojestkurwa = diff
+    howcanikurwa = help
+    nabokkurwa = stash
+    zbokukurwa = stash apply
+    sprzatajkurwa = clean
+    sprzatajwszystkokurwa = !sh -c 'git clean -x' && git reset --hard
