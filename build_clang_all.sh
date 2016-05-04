@@ -21,7 +21,7 @@ git clone http://llvm.org/git/clang-tools-extra.git extra
 
 # sanitizers
 cd ~/full-release/llvm/projects
-% git clone http://llvm.org/git/compiler-rt.git
+git clone http://llvm.org/git/compiler-rt.git
 
 # lld
 cd ~/full-release/llvm/tools

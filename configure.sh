@@ -7,7 +7,7 @@ cp yakuakerc ~/.kde/share/config/yakuakerc
 
 cd /usr/bin
 #setting gold as linker
-sudo ln -sf ld ld.gold
+sudo ln -sf ld.gold ld
 
 cd -
 sudo cp ccache++ /usr/bin/

@@ -3,6 +3,7 @@
 sudo apt-get update
 
 sudo apt-get install \
+    g++ valgrind \
     vim \
     git git-svn subversion gitk \
     libedit-dev \
