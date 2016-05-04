@@ -3,6 +3,7 @@
 mkdir ~/.vim_backup
 
 cp .bashrc .vimrc .gitconfig ~/
+cp yakuakerc ~/.kde/share/config/yakuakerc
 
 cd /usr/bin
 #setting gold as linker

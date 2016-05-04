@@ -1,0 +1,24 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Animation]
+Frames=7
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
+[Shortcuts]
+next-session=Shift+Right; Ctrl+Tab
+previous-session=Shift+Left; Ctrl+Shift+Tab
+
+[Window]
+Height=98
+Position=100
+Screen=0
+Width=48
