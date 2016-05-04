@@ -7,7 +7,7 @@ cd
 git clone http://llvm.org/git/llvm.git
 cd llvm
 git config branch.master.rebase true
-git svn init https://llvm.org/svn/llvm-project/llvm/trunk --username=<$username>
+git svn init https://llvm.org/svn/llvm-project/llvm/trunk --username=$username
 git config svn-remote.svn.fetch :refs/remotes/origin/master
 git svn rebase -l
 
@@ -15,14 +15,14 @@ git svn rebase -l
 cd tools
 git clone http://llvm.org/git/clang.git
 cd clang
-git svn init https://llvm.org/svn/llvm-project/cfe/trunk --username=<$username>
+git svn init https://llvm.org/svn/llvm-project/cfe/trunk --username=$username
 git config svn-remote.svn.fetch :refs/remotes/origin/master
 git svn rebase -l
 
 # clang-tidy clang-format etc
 cd tools
 git clone http://llvm.org/git/clang-tools-extra.git extra
-git svn init https://llvm.org/svn/llvm-project/clang-tools-extra/trunk --username=<$username>
+git svn init https://llvm.org/svn/llvm-project/clang-tools-extra/trunk --username=$username
 git config svn-remote.svn.fetch :refs/remotes/origin/master
 git svn rebase -l
 
