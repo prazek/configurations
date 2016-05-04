@@ -2,7 +2,7 @@
 
 mkdir ~/.vim_backup
 
-cp .bashrc .vimrc .bashconfig ~/
+cp .bashrc .vimrc .gitconfig ~/
 
 cd /usr/bin
 #setting gold as linker
