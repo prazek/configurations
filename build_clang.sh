@@ -26,7 +26,7 @@ cd tools
 
 git clone git@github.com:prazek/clang-extra.git extra
 cd extra
-git remote add upstream https://llvm.org/git/clang-tools-extra
+git remote add upstream http://llvm.org/git/clang-tools-extra
 git svn init https://llvm.org/svn/llvm-project/clang-tools-extra/trunk --username=$username
 git config svn-remote.svn.fetch :refs/remotes/upstream/master
 echo "fetching svn $PWD"
@@ -36,7 +36,7 @@ echo "Building"
 cd
 mkdir llvm-build
 cd llvm-build
-cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=ccache++ -DCMAKE_C_COMPILER=clang \
+cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_COMPILER=ccache++ -DCMAKE_C_COMPILER=clang \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLLVM_ENABLE_ASSERTIONS=ON
 ninja check-all
 
