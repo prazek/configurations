@@ -27,6 +27,7 @@ cd tools
 git clone git@github.com:prazek/clang-extra.git extra
 cd extra
 git remote add upstream http://llvm.org/git/clang-tools-extra
+git fetch upstream
 git svn init https://llvm.org/svn/llvm-project/clang-tools-extra/trunk --username=$username
 git config svn-remote.svn.fetch :refs/remotes/upstream/master
 echo "fetching svn $PWD"

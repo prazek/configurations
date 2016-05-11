@@ -16,3 +16,5 @@ sudo apt-get install yakuake
 sudo apt-get install \
     clang-3.7 clang-format-3.7 
 
+# docs
+sudo apt-get install sphinx-common
