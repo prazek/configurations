@@ -12,5 +12,5 @@ sudo ln -sf ld.gold ld
 cd -
 sudo cp ccache++ /usr/bin/
 # if you want to cache clang I would recomend ~40GB
-ccache -M 8GB
+ccache -M 40GB
 
