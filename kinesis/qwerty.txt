@@ -1,0 +1,12 @@
+[tab]>[caps]
+[caps]>[tab]
+[scroll]>[vol-]
+[prtscr]>[mute]
+[intl-\]>[delete]
+[pause]>[vol+]
+[delete]>[bspace]
+[bspace]>[space]
+[space]>[kp-ralt]
+
+{lctrl}{intl-\}>{-lshift}{9}{+lshift}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{0}{3}{6}{1}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{b}{0}{space}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{0}{3}{5}{c}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{0}{2}{9}{6}{space}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{0}{3}{6}{1}{space}{-lctrl}{-lshift}{u}{+lshift}{+lctrl}{b}{0}{space}{-lshift}{0}{+lshift}
+

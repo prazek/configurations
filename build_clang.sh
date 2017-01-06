@@ -35,9 +35,9 @@ git svn rebase -l | tail
 
 echo "Building"
 cd
-mkdir llvm-build
-cd llvm-build
-cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_COMPILER=ccache++ -DCMAKE_C_COMPILER=clang \
+mkdir llvm-build-release
+cd llvm-build-release
+cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=ccache++ -DCMAKE_C_COMPILER=clang \
     -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLLVM_ENABLE_ASSERTIONS=ON
 ninja check-all
 

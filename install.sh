@@ -18,3 +18,13 @@ sudo apt-get install \
 
 # docs
 sudo apt-get install sphinx-common
+
+#arcanist
+
+sudo apt-get install php7.0-cli php7.0-curl 
+mkdir arcanist
+cd arcanist
+git clone https://github.com/phacility/libphutil.git
+git clone https://github.com/phacility/arcanist.git
+
+
