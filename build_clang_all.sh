@@ -24,10 +24,10 @@ cd ~/full-release/llvm/projects
 git clone http://llvm.org/git/compiler-rt.git
 
 # lld
-cd ~/full-release/llvm/tools
-git clone http://llvm.org/git/lld.git
+#cd ~/full-release/llvm/tools
+#git clone http://llvm.org/git/lld.git
 
-cd ~/full-release/llvm/projects
+#cd ~/full-release/llvm/projects
 git clone http://llvm.org/git/libcxx.git
 git clone http://llvm.org/git/libcxxabi.git
 
@@ -36,7 +36,7 @@ mkdir llvm-build-release
 cd llvm-build-release
 echo "Building in $PWD"
 
-cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc
+cmake ../llvm -GNinja -DCMAKE_BUILD_TYPE=Release
 ninja check-all
 
 
