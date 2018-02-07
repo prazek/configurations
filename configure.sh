@@ -6,8 +6,7 @@ cp .bashrc .vimrc .gitconfig ~/
 cp yakuakerc ~/.kde/share/config/yakuakerc
 
 #setting gold as linker
-cd /usr/bin
-sudo ln -sf ld.gold ld
+./set_gold.sh
 
 cd -
 sudo cp ccache++ /usr/bin/
